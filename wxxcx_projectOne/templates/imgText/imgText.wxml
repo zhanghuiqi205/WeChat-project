@@ -1,0 +1,12 @@
+<template name="imgText">
+	<view class="imgTextBox">
+		<image src="{{oneImg}}"></image>
+		<view class="title">{{title}}</view>
+		<block wx:for="{{textArr}}" wx:key="item.title">
+			<view class="itemBox">
+				<view class="subTitle">{{item.title}}</view>
+				<view class="content">{{item.content}}</view>
+			</view>
+		</block>
+	</view>
+</template>

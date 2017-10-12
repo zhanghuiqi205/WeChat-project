@@ -1,0 +1,63 @@
+.webHead{
+	height: 80rpx;
+	width: 100%;
+	position: relative;
+	background: #fff;
+	z-index: 99;
+}
+.webHead .logo {
+	width: 280rpx;
+	height: 60rpx;
+	margin: 10rpx 0 0 10rpx; 
+	float: left;
+}
+.webHead .muneTab {
+	width:70rpx;
+	height: 70rpx;
+	float: right;
+	margin: 5rpx 20rpx; 
+}
+.webHead .menus {
+	width:100%;
+	height: 0;
+	background: #035CAC;
+	overflow: hidden;
+	position: absolute;
+	top: 80rpx;
+	/*z-index: 10;*/
+}
+.webHead .menuItem {
+	height: 86rpx;
+	border-bottom: 2rpx solid #5484AF;
+	line-height: 86rpx;
+	text-indent: 20rpx;
+	color: #fff;
+	font-size: 28rpx;
+	font-weight: bolder;
+}
+.webHead .menuItem:last-child {
+	border: 0;
+}
+.webHead  .subMenu{
+	height: 86rpx;
+	border-bottom: 2rpx solid #5484AF;
+	line-height: 86rpx;
+	text-indent: 20rpx;
+	color: #fff;
+    font-size:24rpx;
+    background-color:#004888;
+}
+.webHead  .subMenus{
+    height:0;
+    overflow:hidden;
+}
+.webHead .open{
+    height:40rpx;
+    width:40rpx;
+    float:right;
+    margin-top:23rpx;
+    margin-right:23rpx;
+}
+.webHead  .openStatus{
+	height: auto !important;
+}

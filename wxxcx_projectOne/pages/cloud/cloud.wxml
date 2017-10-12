@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<import src="../../templates/banner/banner.wxml"/>
+<import src="../../templates/logo_menu/logo_menu.wxml"/>
+<import src="../../templates/productConMenu/productConMenu.wxml"/>
+<view class="container">
+  <template is="logo_menu" data="{{...logo_menu}}"></template>
+  <template is="bannerTemp" data="{{...tempData}}"/>
+  <view class="public_title">
+     <template is="productConMenu" data="{{...productConMenu}}"></template>
+  </view>
+  <view class="main">  
+    <view class="advantage_title">{{description.content}}</view>   
+    <image class="advantage_img" src="{{description.imgUrl}}"></image> 
+    <view class="advantage" wx:for="{{text}}">     
+      <view class="advantage_t"><image src="{{item.imgUrl}}"></image>{{item.title}}</view>     
+      <text>{{item.content}}</text>
+    </view>
+  </view>
+  <view class="main">   
+  <view class="reward_title">商务e云平台能为企业带来什么?</view> 
+    <view class="reward" wx:for="{{note}}">    
+    <image src="{{item.imgUrl}}"></image> 
+    <view class="reward_text">
+      <view class="reward_t">{{item.title}}</view>
+      <text>{{item.content}}</text>
+    </view>  
+    </view>
+  </view>
+</view>

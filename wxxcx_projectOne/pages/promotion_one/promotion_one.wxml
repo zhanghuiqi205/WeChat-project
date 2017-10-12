@@ -1,0 +1,48 @@
+<!--  -->
+<import src="../../templates/banner/banner.wxml"/>
+<import src="../../templates/logo_menu/logo_menu.wxml"/><!--引入头部菜单模板-->
+<import src="../../templates/productConMenu/productConMenu.wxml"/>
+<view class="container">
+    <view class="headBox">
+        <template is="logo_menu" data="{{...logo_menu}}"></template><!--引入头部菜单模板-->
+        <template is="bannerTemp" data="{{...tempData}}"></template>
+        <view class="menus" animation="{{animationData}}">
+          <view class="menuItem" wx:for="{{menus}}" wx:key="*this">{{item}}</view>
+        </view>    
+    </view>
+    <view class="promotion">
+        <view class="promotionTitle">
+             <template is="productConMenu" data="{{...productConMenu}}"></template>
+        </view>
+        <view class="promotion_container">
+          <view class="promotion_head">
+            <image src="../../images/promotion_one/p_header.png"></image>
+          </view>
+          <view class="promotion_p">你是否存在以下问题？</view>
+          <view class="promotion_img" >
+            <image  wx:for="{{pnumImgs}}" wx:key="*this" src="{{item}}"></image> 
+          </view> 
+          <view class="promotion_p1">一步推</view>  
+          <view class="promotion_p1Content">为中小企业提供集企业官网，商贸网站推广，搜索引擎推广整合于一体的网络营销推广平台，满足企业网络营销推广需求。</view>  
+          <view class="promotion_p2">一步推能带来什么？</view> 
+          <view class="promotion_p2Content" wx:for="{{ promotionContent}}" wx:key="*this"> 
+            <image class="promotion_cImg" src="{{item.pcImg}}"></image>
+            <view class="promotion_cText">{{item.pcText}}</view>  
+          </view>
+          <view class="promotion_p3">核心优势</view> 
+          <view class="promotion_p3Content" wx:for="{{promotion_p3Content}}" wx:key="*this">
+            <view>{{item}}</view>
+          </view>
+        </view>
+        <view class="promotion_bottom">
+          <view class="promotion_bottomTitle">合作客戶</view>
+          <view class="caseWrap">
+            <block wx:for="{{casesArr}}" wx:key="*this">
+		           <image class="caseItem" src="{{item}}"></image>
+	          </block>
+          </view>
+        </view>
+    </view>
+   
+    
+ </view> 

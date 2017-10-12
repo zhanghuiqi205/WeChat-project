@@ -1,0 +1,67 @@
+
+<import src="../../templates/banner/banner.wxml"/>
+<import src="../../templates/productConMenu/productConMenu.wxml"/>
+<import src="../../templates/logo_menu/logo_menu.wxml"/>
+
+<view class="headBox">
+    <template is="logo_menu" data="{{...logo_menu}}"></template>
+  	<template is="bannerTemp" data="{{...tempData}}"></template>
+  	<view class="menus" animation="{{animationData}}">
+		<view class="menuItem" wx:for="{{menus}}" wx:key="*this">{{item}}</view>
+  	</view>    
+</view>
+<template is="productConMenu" data="{{...productConMenu}}"></template>
+  <image class="img-1" src="{{src1}}"></image>
+
+
+  <view class="center-text2">PC网站为什么要升级成全网站？</view>
+
+  <view class="center-text2-1">国内6亿互联网网民目前越来越多地习惯使用手机、平板电脑上网浏览各种信息。这使得手机网站可以顺势而为较为轻松地获得这些潜在的海量</view>
+  
+
+  <view class="center-text2">全网营销有什么用？</view>
+
+  <view class="center-text2-1">提升企业品牌形象，促进整体销量，完善客服体系，梳理分销渠道。全网营销将所有网站后台打通，实现了资源优势互补，形成了多元化的网络</view>
+  
+  <view class="content">
+
+
+  <image class="img-1" src="{{src2}}"></image>
+  
+   <view class="center-text2">云桌面全网营销解决方案</view>
+  <view class="center-text2-1">商务e云平台架构，成熟的企业信息化平台，助你拥抱互联网+时代，开展全网营销时代。  集中移动互联网、PC互联网资源，将产品规划  </view>
+  <view class="center-text2-1">商务e云平台架构，成熟的企业信息化平台，助你拥抱互联网+时代，开展全网营销时代。  集中移动互联网、PC互联网资源，将产品规划  </view>
+  </view>
+
+  <view class="server_title1" >
+        <image class="sever_img1" src="../../images/market/bottom1.png"></image>
+        <view class="total-text">
+          <view class="server_text1">全网展示</view>
+          <view class="server_text2">仅需要键入一个网址，pc、移动设备便同时展示。后台一体化数据统一，一次添加全网发布。</view>
+        </view>
+  </view>
+    <view class="server_title1" >
+        <image class="sever_img1" src="../../images/market/bottom2.png"></image>
+        <view class="total-text">
+          <view class="server_text1">全网推广</view>
+          <view class="server_text2">优化网页搜索引擎友好度，免费提升网站自然排名更有优秀的“推广神器”一步推到位，助力企业网络营销效果最大化！</view>
+        </view>
+  </view>
+  <view class="server_title1" >
+        <image class="sever_img1" src="../../images/market/bootom3.png"></image>
+        <view class="total-text">
+          <view class="server_text1">全网管理</view>
+          <view class="server_text2">后台统一今科云桌面系统管理，PC端和移动端数据同步，一个账号，全站通行。</view>
+        </view>
+  </view>
+  <view class="server_title1" >
+        <image class="sever_img1" src="../../images/market/botoom4.png"></image>
+        <view class="total-text">
+          <view class="server_text1">全网监控</view>
+          <view class="server_text2">在线商机把握，及时数据监控，第一时间推送。搭配商机通，商机找上门，商机牢牢掌握在手。</view>
+        </view>
+  </view>
+  
+
+
+  

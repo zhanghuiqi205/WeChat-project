@@ -1,0 +1,12 @@
+<template name="productConMenu">
+    <view class="productTitle">
+    <view><navigator url="../index/index" open-type="reLaunch"><image src="../../images/about_kenfor/back_btn.png" ></image></navigator></view>
+    <view class="txt"><text>{{productTitle}}</text></view>
+      <view class="more_btn" bindtap="showProductConMenu" ><image src="../../images/about_kenfor/more_btn.png" ></image></view>
+            <view class="subMenuList" animation="{{animationProductConMenu}}">
+                <block wx:for="{{list}}" >
+                    <navigator class="subMenuItem" url="{{item.url}}" open-type="reLaunch" >{{item.title}}</navigator> 
+                </block>
+	    	</view>
+    </view>
+</template>

@@ -1,0 +1,19 @@
+<!-- 1.菜单的属性在app.js的公共属性globalData中的logo_menu；
+2.引入xwml和wxss后，在当前页面的data属性中添加logo_menu: app.globalData.logo_menu；（前提var app=getApp（））；
+3.引入方法 var logoMenu = require('../../templates/logo_menu/logo_menu.js') ；
+4.添加方法showMenu:logoMenu -->
+<template name="logo_menu">
+    <view class="webHead">
+        <navigator  url="../index/index" open-type="reLaunch"><image src="{{logoSrc}}" class="logo" ></image></navigator>
+		<image src="{{menuSrc}}" class="muneTab" bindtap="showMenu"></image>
+        <view class="menus {{menus[3].child?'openStatus':''}}" animation="{{animationData}}">
+            <block wx:for="{{menus}}">
+                <navigator wx:if="{{item.url}}" class="menuItem"  url="{{item.url}}" open-type="reLaunch" >{{item.title}} <image class="open" src="{{item.image}}"></image></navigator>
+                <view wx:else class="menuItem" bindtap="showSubMenu"  >{{item.title}} <image class="open" src="{{item.image}}"></image></view>
+                <view wx:if="{{item.list}}" class="subMenus" animation="{{item.animationSubMenu}}">
+                    <navigator class="subMenu"  wx:for="{{item.list}}"  url="{{item.url}}" open-type="reLaunch" >{{item.title}}</navigator>
+                </view>
+            </block>
+    	</view>
+  	</view>
+</template>

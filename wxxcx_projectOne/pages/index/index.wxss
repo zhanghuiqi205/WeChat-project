@@ -1,0 +1,153 @@
+/**index.wxss**/
+@import "../../templates/logo_menu/logo_menu.wxss";
+.container{
+  background-color: #edf0f5;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.m_banner{
+  height: 400rpx;
+}
+.m_banner image{
+  width: 100%;
+  height: 400rpx;
+}
+.listTitle{
+  height:100rpx;
+  width:100%;
+  font-size:40rpx;
+  text-align:left;
+  padding-left:20rpx;
+  margin-top:20rpx;
+}
+.m_listItem{
+  height:100rpx;
+  width:100%;
+  border-bottom: 2rpx solid #e0d9d9;
+}
+.m_songName{
+  padding-top: 12rpx;
+  padding-left:28rpx;
+}
+.m_singer{
+  font-size:24rpx;
+  color:#ccc;
+  padding-top:4rpx;
+  padding-left:28rpx;
+}
+.product{
+  width: 100%;
+  height: 300px;
+  margin-top: 25px;
+  background-color:#fff;
+  border-bottom: 1px solid #ccc;
+}
+.productText,.aboutTitle{
+  height:50px;
+  width: 100%;
+  line-height:50px;
+  font-size:20px;
+  font-weight:bold;
+  border-bottom:1px solid #ccc;
+  padding-left:20px;
+}
+.productCon{
+  height: 100px;
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+.productCon image{
+  height: 80px;
+  width: 80px;
+  /* margin-left:10px; */
+}
+.productCon .productConTxt{
+  font-size: 12px;
+  text-align: center;
+}
+.about{
+  width: 100%;
+  height: 250px;
+  margin-top: 25px;
+  background-color:#fff;
+  border-bottom: 1px solid #ccc;
+}
+.aboutText{
+  text-indent: 30px;
+  font-size: 14px;
+  line-height:24px;
+  padding:20px 10px;
+  color:#707070;
+}
+.video{
+  width: 100%;
+  height: 280px;
+  margin-top: 25px;
+  background-color:#035cac;
+  border-bottom: 1px solid #ccc;
+}
+.videoTitle{
+  height:50px;
+  width: 100%;
+  line-height:50px;
+  font-size:20px;
+  font-weight:bold;
+  padding-left:20px;
+  color: #fff;
+}
+.videoContent{
+  background-color:#fff;
+  height:200px;
+  width:90%;
+  margin:0 auto;
+}
+.videoContent video{
+  width: 100%;
+  height:200px;
+}
+.whyUs{
+  width: 100%;
+  height: 520px;
+  margin-top: 25px;
+  background-color:#fff;
+  border-bottom: 1px solid #ccc;
+}
+.whyUsTitle{
+  height:50px;
+  width: 100%;
+  line-height:50px;
+  font-size:20px;
+  font-weight:bold;
+  border-bottom:1px solid #ccc;
+  padding-left:20px;
+}
+.whyUsItem{
+  width:50%;
+  text-align:center;
+  margin-top:20px;
+  float: left;
+}
+.whyUsItem image{
+  height: 150px;
+  width: 150px;
+}
+.whyUsText_1{
+  font-size:16px;
+  font-weight:bold;
+  line-height:24px;
+}
+.whyUsText_2{
+  font-size:12px;
+  line-height:24px;
+  color:#797979;
+}
+.copyRight{
+  font-size:12px;
+  line-height:24px;
+  text-align:center;
+  background-color:#000;
+  color:#fff;
+  padding:10px 0;
+}

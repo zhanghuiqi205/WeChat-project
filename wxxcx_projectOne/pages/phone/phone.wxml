@@ -1,0 +1,7 @@
+<view >
+    <block wx:for="{{telphone}}">
+        <view class="kenforClientTel" bindtap="makePhoneCall"  data-tel="{{item.tel}}" >
+            <text class="address">{{item.address}}</text><text class="tel">{{item.tel}}</text>
+        </view>
+    </block>
+</view>

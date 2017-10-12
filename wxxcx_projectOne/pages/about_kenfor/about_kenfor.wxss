@@ -1,0 +1,69 @@
+@import '../../templates/logo_menu/logo_menu.wxss';
+@import '../../templates/productConMenu/productConMenu.wxss';
+.container{
+    background-color: #edf0f5;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.m_banner{
+    height: 400rpx;
+}
+.m_banner image{
+    width: 100%;
+    height: 400rpx;
+}
+/*简介-关于今科*/
+.introduce{
+    /*overflow:hidden;*/
+    padding-bottom:2rpx 0;
+}
+.introduce .context{
+    color:#666666;
+    font-size:25rpx;
+    padding:25rpx 36rpx;
+    background:#ffffff;
+    border-top:1px solid #c9ced6;
+    border-bottom:1px solid #c9ced6;
+}
+.introduce .context view{
+    margin-bottom:45rpx;
+    line-height:30rpx;
+    text-indent:50rpx;
+}
+/*提供的服务*/
+.services{
+    overflow:hidden;
+    margin-top:22rpx;
+    background:#ffffff;
+    border-top:2rpx solid #c9ced6;
+}
+.services .title{
+    height:58rpx;
+    border-bottom:1px solid #c9ced6;
+    font-size:25rpx;
+    padding-left:28rpx;
+    line-height:58rpx;
+    color:#333333;  
+}
+.services .cellPart{
+    padding:0 22rpx;
+    padding-bottom:70rpx;
+    overflow:hidden;
+
+}
+.services .productCon{
+    text-align:center;
+    margin-top:70rpx;
+    overflow:hidden;
+    width: 25%;
+    float: left;
+}
+.services .productCon image{
+    height: 108rpx;
+    width: 108rpx;
+    }
+.services .productCon .productConTxt{
+    font-size: 24rpx;
+    text-align: center;
+}

@@ -1,0 +1,44 @@
+
+<import src="../../templates/logo_menu/logo_menu.wxml"/>
+<import src="../../templates/productConMenu/productConMenu.wxml"/>
+<template is="logo_menu" data="{{...logo_menu}}"></template>
+<view class="cloudCon">
+  <view class="cloudBanner">
+    <image src="../../images/cloudMon/banner_control.jpg"></image>
+  </view>
+  <!-- <view class="cloudTitle">云监控</view> -->
+  <view class="cloudTitle">
+      <template is="productConMenu" data="{{...productConMenu}}"></template>
+  </view>
+  <view class="cloudContent">
+    <view class="forum">
+      <view class="introduction">云监控是一款为企业官网、商城、手机网站，客户留言和用户投诉量身打造的一款监控利器，让您轻松获取运营数据，为企业提供有效地决策。</view>
+      <view class="cloudCross">
+        <image src="../../images/cloudMon/control_arrow.png"></image>
+      </view>
+      <view class="cloudCross">
+        <image src="../../images/cloudMon/control_question.png"></image>
+      </view>
+      <view class="cloudFunc">
+        <view class="funcImg">
+          <image src="../../images/cloudMon/main_con.png"></image>
+        </view>
+        <view class="funcContent" wx:for="{{mainFunc}}" wx:key="*this">
+          <view class="func_left">
+            <image src="{{item.imgUrl}}"></image>
+          </view>
+          <view class="func_right">
+            <view class="funcFeatureTxt1">{{item.funcTxt1}}</view>
+            <view class="funcFeatureTxt2">{{item.funcTxt2}}</view>
+          </view>
+        </view>
+        <view class="funcAdvantage">
+          <view class="advantageTitle">技术优势</view>
+          <view class="advantageTxt">自主研发，独立软件著作权</view>
+          <view class="advantageTxt">自主独立运营，安全稳定</view>
+          <view class="advantageTxt">免费开放，持续升级（只针对商务e商务e云平台客户）</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

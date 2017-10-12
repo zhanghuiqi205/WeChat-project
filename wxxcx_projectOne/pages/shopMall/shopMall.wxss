@@ -1,0 +1,296 @@
+/**shopMall.wxss**/
+@import "../../templates/banner/banner.wxss";
+@import "../../templates/logo_menu/logo_menu.wxss";
+@import '../../templates/productConMenu/productConMenu.wxss';
+
+page{
+  font-family: "Arial, Microsoft YaHei";
+}
+.container{
+  background-color: #edf0f5;
+  height: 100%;
+  width: 100%;
+}
+.headBox {
+	position: relative;
+	height: 480rpx;
+  width: 100%;
+}
+.promotion{
+  padding-bottom:2rpx 0; 
+  width: 100%;
+}
+
+.div_mall,.ChildNav{
+  width: 100%;
+}
+.div_mall{
+  /* border-top: 1px solid #C9CED6; */
+  padding-top: 30rpx;
+  background-color: #fff;
+}
+.navActive{
+  background-color: #035CAC;
+  color: #fff !important;
+}
+.ChildNav view{
+  border:1px solid #035CAC;
+  text-align:center;
+  height:60rpx;
+  line-height:60rpx;
+  font-size:28rpx;
+  border-radius:4rpx;
+  width:300rpx;
+  color: #035CAC;
+}
+.navTxtL{
+  float: left;
+  margin-left: 40rpx;
+}
+.navTxtR{
+  float: right;
+  margin-right: 40rpx;
+}
+.clearfix::before{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.Hea_MallHeader{
+  padding:20px;
+  margin-top:30px;
+  line-height:24px;
+  font-size:14px;
+  color:#666;
+}
+.Div_MallBox{
+  width: 100%;
+}
+.Div_MallContent{
+  width:40%;
+  text-align:center;
+  padding:40rpx 5%;
+  float:left;
+}
+.Div_MallContent image{
+  width:160rpx;
+  height:160rpx;
+}
+.mailConTxt1{
+  line-height:60rpx;
+}
+.mailConTxt2{
+  font-size:28rpx;
+  color:#666;
+  line-height:36rpx;
+}
+.mallService image{
+  width: 100%;
+  height: 400rpx;
+}
+.Div_MallPoint{
+  padding: 20rpx 40rpx;
+}
+.mallPoint_Box{
+  padding: 30rpx 0;
+}
+.pointTitle{
+  font-size:36rpx;
+  line-height:60rpx;
+  font-weight:bold;
+}
+.pointTxt{
+  font-size:28rpx;
+  line-height:48rpx;
+  color:#666;
+}
+.Div_Distributor{
+  margin-top:40rpx;
+  background-color:#fff;
+  width:100%;
+}
+
+.distributorBox{
+  padding:20rpx;
+}
+.distributorTitle{
+  font-size:40rpx;
+  line-height:80rpx;
+  color:#F38918;
+  font-weight:bold;
+}
+.distributorTxt{
+  font-size:28rpx;
+  line-height:40rpx;
+  color:#666;
+}
+.Hea_Distributor{
+  margin-top:20rpx;
+  text-align:center;
+}
+.mainTitle{
+  font-size:40rpx;
+  line-height:100rpx;
+  font-weight:bold;
+}
+.subTitle{
+  position: relative;
+}
+.subSign{
+  border:1px solid #F70;
+  width: 80%;
+  margin: 0 auto;
+}
+.subTxt{
+  position:absolute;
+  left:34%;
+  top:-16rpx;
+  background-color:#fff;
+  width:240rpx;
+}
+.flex_warp{
+  display: flex;
+  display: -webkit-flex;
+  margin-top: 40rpx;
+}
+.flex_warp image{
+  height: 100px;
+}
+.Div_DistributionFeature{
+  text-align:left;
+  margin-top:20px;
+  padding:0 20rpx;
+}
+.featureTitle{
+  font-size:40rpx;
+  font-weight:bold;
+  line-height:60rpx;
+}
+.featureCon{
+  margin: 30rpx 0;
+}
+.featureCon_left{
+  height:80rpx;
+  width:80rpx;
+  background-color:#F70;
+  text-align:center;
+  line-height:80rpx;
+  color:#fff;
+  font-size:40rpx;
+  border-radius:8rpx;
+  float: left;
+  margin-top: 20rpx;
+}
+.featureCon_right{
+  font-size:28rpx;
+  color:#666;
+  margin-left:80rpx;
+  padding-left:20rpx;
+  line-height:40rpx;
+}
+.Div_MallCoreValue{
+  margin-top:20px;
+  background-color:#fff;
+  width:100%;
+}
+.coreValueTitle{
+  height:80rpx;
+  width:100%;
+  line-height:80rpx;
+  text-align:left;
+  padding-left:20rpx;
+  font-weight:bold;
+  font-size:40rpx;
+  color:#000;
+}
+.coreValueBox{
+  padding: 20rpx;
+  border-top:1px solid #ccc;
+}
+.coreValueTxt{
+  font-size:28rpx;
+  color:#666;
+  line-height:40rpx
+}
+.coreValueImg image{
+  width:100%;
+  margin-top:50rpx;
+  height:600rpx;
+}
+.multistage{
+  color:#035CAC;
+  line-height:80rpx;
+  margin-top:40rpx;
+}
+.multistOne{
+  font-size:28rpx;
+  color:#666;
+  line-height:50rpx;
+}
+.multistMar{
+  margin-left: 30rpx;
+}
+.structure{
+  margin:40rpx 0;
+  width:100%;
+  height:540rpx;
+}
+.Div_DistributionModal{
+  margin-top: 40rpx;
+}
+.modalTitle{
+  position: relative;
+}
+.modalSign{
+  border:1px solid #035CAC;
+  width: 90%;
+  margin: 0 auto;
+}
+.modalTxt{
+  position:absolute;
+  left:36%;
+  top:-16rpx;
+  background-color:#fff;
+  width:180rpx;
+  text-align:center;
+  color: #035CAC;
+  font-weight: bold;
+}
+.DistributorModalBox{
+  margin-top:90rpx;
+  text-align:center;
+  display: flex;
+  display: -webkit-flex;
+}
+.modalBox{
+  width: 100%;
+}
+.modalBxoImg{
+  height:144rpx;
+  width:144rpx;
+}
+.modalBxoTxt{
+  color:#666;
+  margin-top:10rpx;
+  font-size:28rpx;
+}
+.Div_MallFunction{
+  margin-top: 50rpx;
+}
+.mallFuncTitle{
+  color:#035CAC;
+  line-height:80rpx;
+  margin-top:40rpx;
+}
+.mallFuncTxt{
+  float:left;
+  width:50%;
+  color:#666;
+  line-height:50rpx;
+  font-size: 28rpx;
+}
+.mallFuncTxt:last-child{
+  margin-bottom: 40rpx;
+}

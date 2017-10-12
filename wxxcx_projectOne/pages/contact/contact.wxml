@@ -1,0 +1,29 @@
+<import src="../../templates/logo_menu/logo_menu.wxml"/>
+<view class="container">
+<template is="logo_menu" data="{{...logo_menu}}"></template>
+  <view class="conBanner">
+    <image src="../../images/contact/banner_contact.jpg"></image>
+  </view>
+  <view class="conTitle">联系我们</view>
+  <view class="bannerContent">
+    <view class="Forum">
+      <view class="forumText">建网站，找今科</view>
+      <view class="forumText">50000家企业网络营销服务建站服务经验</view>
+      <view class="ShortLine"></view>
+      <view class="forumTel">全国服务热线：400-830-7686</view>
+      <view class="forumWx">微信公众号：今科科技</view>
+    </view>
+    <view class="subForum" wx:for="{{companyInfo}}" wx:key="*this">
+      <view class="subForum_left">
+        <image class="forumImg" src="{{item.imgUrl}}"></image>
+        <image class="forumTelImg" src="../../images/contact/contactTel.jpg"></image>
+      </view>
+      <view class="subForum_right">
+        <view class="subRightTitle">{{item.conTitle}}</view>
+        <view class="subRightAdr">公司地址：{{item.conAddress}}</view>
+        <view class="subRightAdr">公司电话：{{item.conTel}}</view>
+        <view class="subRightAdr">传真号码：{{item.conFax}}</view>
+      </view>
+    </view>
+  </view>
+</view>

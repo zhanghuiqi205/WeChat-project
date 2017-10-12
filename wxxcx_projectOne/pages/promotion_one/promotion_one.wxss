@@ -1,0 +1,114 @@
+/* pages/promotion_one/promotion_one.wxss */
+@import "../../templates/banner/banner.wxss";
+@import "../../templates/logo_menu/logo_menu.wxss";
+@import '../../templates/productConMenu/productConMenu.wxss';
+.container{
+  font-family: "Arial, Microsoft YaHei";
+  background: #edf0f5;
+  height: 100%;
+  width: 100%;
+}
+.headBox {
+	position: relative;
+	height: 480rpx;
+  width: 100%;
+}
+
+
+.promotion{
+  padding-bottom:2rpx 0;
+}
+
+
+.promotion_container{
+  background:#fff;
+  height: 1916rpx;
+  border-bottom:2rpx solid #c9ced6;
+}
+.promotion_p,.promotion_p1,.promotion_p2,.promotion_p3{
+  margin-top: 56rpx;
+  margin-left: 50rpx;
+  font-size: 36rpx;
+  color: #ff6600;
+  font-weight: blod;
+}
+.promotion_p1Content{
+  margin-top: 26rpx;
+  margin-left: 50rpx;
+  font-size: 24rpx;
+  color: #555;
+  margin-right:26rpx;
+}
+.promotion_head image{
+  height: 238rpx;
+  width: 610rpx;
+  padding-left: 47rpx;
+  padding-top:39rpx;
+}
+.promotion_img image{
+  width: 150rpx;
+  height: 172rpx;
+  float: left;
+  margin:48rpx;
+  margin-top:20rpx;
+}
+
+
+.promotion_p2Content image{
+  margin-left: 50rpx;
+  height:28rpx;
+  width: 5rpx;
+  float: left;
+}
+.promotion_cText{
+  font-size: 24rpx;
+  color: #555;
+  margin-top:20rpx;
+  margin-left:70rpx;
+  margin-right: 26rpx; 
+}
+.promotion_p3Content view {
+  margin-top: 30rpx;
+  margin-left: 50rpx;
+  margin-bottom:45rpx;
+  line-height:30rpx;
+  font-size: 24rpx;
+  margin-right:30rpx;
+  color: #555;
+}
+.promotion_line{
+  color:#edf0f5;
+  height:40rpx;
+  width: 100%;
+  border-top: 1rpx solid #ccc;
+  border-bottom: 1rpx solid #ccc;
+}
+.promotion_bottom{
+  overflow:hidden;
+  margin-top:24rpx;
+  background:#ffffff;
+  border-top:2rpx solid #c9ced6;
+
+}
+.promotion_bottomTitle{
+  margin-top: 20rpx;
+  margin-left: 50rpx;
+  font-size: 24rpx;
+  color:#555;
+
+}
+
+.caseWrap {
+	display: flex;
+	flex-flow: row wrap;
+	margin-top: 20rpx; 
+	overflow: hidden;
+}
+.caseItem {
+	width: 25%;
+	height: 180rpx;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+	border-right: none;
+	border-bottom: none; 
+}

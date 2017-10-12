@@ -1,0 +1,45 @@
+/**index.wxss**/
+
+/*引入模板文件的样式，也可以直接在app.wxss全局引用*/
+@import "../../templates/banner/banner.wxss";
+@import '../../templates/productConMenu/productConMenu.wxss';
+@import "../../templates/imgText/imgText.wxss";
+@import "../../templates/imgImg/imgImg.wxss";
+@import "../../templates/logo_menu/logo_menu.wxss";
+.headBox {
+	position: relative;
+	height: 480rpx;
+}
+.textBox {
+	margin:40rpx 20rpx 0 20rpx;
+}
+.textBox .tit {
+	color: #035cac;
+	font-size: 45rpx;
+}
+
+.textBox .txt {
+	margin-top:20rpx; 
+	font-size:31rpx;
+	line-height:31rpx;
+	color:#666;
+} 
+.Morecases {
+	margin:20rpx;
+	color: #035cac;
+	font-size: 45rpx;
+}
+.caseWrap {
+	display: flex;
+	flex-flow: row wrap;
+	margin-top: 20rpx; 
+	overflow: hidden;
+}
+.caseItem {
+	width: 25%;
+	height: 180rpx;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+	border-right: none;
+	border-bottom: none; 
+}

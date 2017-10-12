@@ -1,0 +1,84 @@
+<!--index.wxml-->
+<import src="../../templates/banner/banner.wxml"/>
+<import src="../../templates/productConMenu/productConMenu.wxml"/>
+<import src="../../templates/logo_menu/logo_menu.wxml"/>
+<view class="headBox">
+  	<template is="logo_menu" data="{{...logo_menu}}"></template>
+  	<template is="bannerTemp" data="{{...tempData}}"></template>
+  	<view class="menus" animation="{{animationData}}">
+		<view class="menuItem" wx:for="{{menus}}" wx:key="*this">{{item}}</view>
+  	</view>    
+</view>
+
+    <template is="productConMenu" data="{{...productConMenu}}"></template>
+
+
+<view class="text">云主机是一种简单高效、处理能力可弹性伸缩的计算服务，帮助您快速构建更稳定、安全的应用，提升运维效率，降低IT成本，使您更专注于核心业务创新</view>
+
+ <view class="server-list">
+  <view class="server_title" wx:for="{{server_title}}" data-url="{{item.url}}" bindtap="bindViewTap" >
+        <image class="sever_img" src="{{item.imgSrc}}"></image>
+        <view class="server_text">{{item.imgText}}</view>
+  </view>
+  </view>
+  <view class="background">
+  <view class="centertext">维护便捷</view>
+  <view class="centertext1">大程度的降低设备购置成本，设备维护运营成本</view>
+  <view class="centertext1">节约设备维护时间，避免业务风险 </view>
+  <view class="centertext1">提供高效灵活的部署，三方安全性能保障。</view>
+  <view class="centertext1"> 业务的快速上线及扩展能力,成为用户在互联网领域的最佳合作伙伴。</view>
+  </view>
+
+  <view class="single-title">今科云主机优势</view>
+
+
+  <view class="server_title1" >
+        <image class="sever_img1" src="../../images/host_server/111.png"></image>
+        <view class="total-text">
+          <view class="server_text1">快速开通资源</view>
+          <view class="server_text2">仅需几分钟即可完成CPU、内存、数据存储空间 和网络带宽等资源的配置</view>
+        </view>
+  </view>
+    <view class="server_title1" >
+        <image class="sever_img1" src="../../images/host_server/222.png"></image>
+        <view class="total-text">
+          <view class="server_text1">自主管理控制台</view>
+          <view class="server_text2">对于您的任何资源，都可以通过控制台进行常规的 创建、启用、关闭等基本操作</view>
+        </view>
+  </view>
+  <view class="server_title1" >
+        <image class="sever_img1" src="../../images/host_server/333.png"></image>
+        <view class="total-text">
+          <view class="server_text1">数据安全稳定</view>
+          <view class="server_text2">私有网络二层隔离,每份数据在后台都存有多份冗余， 并实时同步。系统拥有快照备份和自动恢复能力， 确保数据安全可靠</view>
+        </view>
+  </view>
+  <view class="server_title1" >
+        <image class="sever_img1" src="../../images/host_server/444.png"></image>
+        <view class="total-text">
+          <view class="server_text1">出色磁盘性能</view>
+          <view class="server_text2">提供高IOPS、高内存容量、高吞吐量的超高性能 块存储设备</view>
+        </view>
+  </view>
+
+
+
+
+  <view class="single-title">功能技术架构</view>
+    <view class="server_text2">资源支持：云主机、云存储、监控、提供各种API接口。 </view>
+    <view class="server_text2"> 服务支持：负载均衡、双机热备、全套解决方案、服务咨询。</view>
+
+
+  <view class="single-title1">为什么选择我们？</view>
+  <view class="server-list">
+  <view class="server_title" wx:for="{{server_title2}}" data-url="{{item.url}}" bindtap="bindViewTap" >
+        <image class="sever_img" src="{{item.imgSrc}}"></image>
+        <view class="server_text">{{item.imgText}}</view>
+  </view>
+  </view>
+
+  <view class="single-title">适用行业</view>
+    <view class="server_text2">公有云市场：一般互联网、企业客户、电子商务网站等</view>
+    <view class="server_text2">私有云市场：对安全性要求高的企事业单位</view>
+    <view class="server_text2">渠道客户：销售云计算资源的云计算提</view>
+    <view class="space"></view>

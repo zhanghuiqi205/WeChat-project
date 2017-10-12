@@ -1,0 +1,103 @@
+<!--shopMall.wxml-->
+<import src="../../templates/banner/banner.wxml"/>
+<import src="../../templates/logo_menu/logo_menu.wxml"/><!--引入头部菜单模板-->
+<import src="../../templates/productConMenu/productConMenu.wxml"/>
+<view class="container">
+    <view class="headBox">
+        <template is="logo_menu" data="{{...logo_menu}}"></template><!--引入头部菜单模板-->
+        <template is="bannerTemp" data="{{...tempData}}"></template>
+        <view class="menus" animation="{{animationData}}">
+          <view class="menuItem" wx:for="{{menus}}" wx:key="*this">{{item}}</view>
+        </view>    
+    </view>
+    <view class="promotion">
+        <template is="productConMenu" data="{{...productConMenu}}"></template>
+    </view>
+  <view class="div_mall">
+    <view class="ChildNav">
+      <view class="navTxtL navActive">商城易</view>
+      <view class="navTxtR">分销模式</view>
+    </view>
+    <view class="Hea_MallHeader clearfix">
+      商城易是专为大中型企业开发的企业级电子商务商城系统，功能强大，安全便捷，让企业低成本快速构建在线商城，开启电子商务业务。
+    </view>
+    <view class="Div_MallBox">
+       <view class="Div_MallContent" wx:for="{{mallInfo}}" wx:key="uniqe">
+        <image src="{{item.imgUrl}}"></image>
+        <view class="mailConTxt1">{{item.mallTitle}}</view>
+        <view class="mailConTxt2">{{item.mallTxt}}</view>
+      </view> 
+      <!-- <image src="../../images/shopMall/mall_info.png"></image> -->
+    </view>
+    <view class="mallService">
+      <image src="../../images/shopMall/mall_feature.png"></image>
+    </view>
+    <view class="Div_MallPoint">
+      <view class="mallPoint_Box" wx:for="{{pointArr}}" wx:key="*this">
+        <view class="pointTitle">{{item.pointTitle}}</view>
+        <view class="pointTxt">{{item.pointTxt}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="Div_Distributor">
+    <view class="distributorBox">
+      <view class="distributorTitle">全网分销模式</view>
+      <view class="distributorTxt">专为中小企业打造的企业商城，多端同步，无缝沟通，随时随地助你企业转型互联网，全民分销，让更多人帮您卖产品。</view>
+    </view>
+    <view class="Hea_Distributor">
+      <view class="mainTitle">谁适合做分销系统</view>
+      <view class="subTitle">
+        <view class="subSign"></view>
+        <view class="subTxt">有货源优势的</view>
+      </view>
+      <view class="flex_warp">
+        <image src="../../images/shopMall/mall_system01.png"></image>
+        <image src="../../images/shopMall/mall_system02.png"></image>
+        <image src="../../images/shopMall/mall_system03.png"></image>
+        <image src="../../images/shopMall/mall_system04.png"></image>
+      </view>
+      <view class="Div_DistributionFeature">
+        <view class="featureTitle">分销系统能为你做什么？</view>
+        <view class="featureCon" wx:for="{{featureArr}}" wx:key="*this">
+          <view class="featureCon_left">{{item.featureTitle}}</view>
+          <view class="featureCon_right">{{item.featureTxt}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="Div_MallCoreValue">
+    <view class="coreValueTitle">核心价值</view>
+    <view class="coreValueBox">
+      <view class="coreValueTxt">360度全方位运营朋友圈，让您真正实现精准营销。一键分销，操作简单，裂变式分销。</view>
+      <view class="coreValueImg">
+        <image src="../../images/shopMall/mall_direction.png"></image>
+      </view>
+      <view class="multistage">多级分销，三级分佣</view>
+      <view class="multistOne">一、多级分销模式，每个分销商都可以发展下级分销商</view>
+      <view class="multistOne">二、演绎圈子裂变理论，覆盖更多人群</view>
+      <view class="multistOne">三、每个分销商佣金来自两个部分：</view>
+      <view class="multistOne multistMar">1、销售产品佣金</view>
+      <view class="multistOne multistMar">2、下级分销商销售产品佣金</view>
+      <image class="structure" src="../../images/shopMall/mall_structure.png"></image>
+      <view class="Div_DistributionModal">
+        <view class="modalTitle">
+          <view class="modalSign"></view>
+          <view class="modalTxt">分销功能</view>
+        </view>
+        <view class="DistributorModalBox">
+          <view class="modalBox" wx:for="{{modalArr}}" wx:key="*this">
+            <image class="modalBxoImg" src="{{item.modalSrc}}"></image>
+            <view class="modalBxoTxt">{{item.modalTxt}}</view>
+          </view>
+        </view>
+        <view class="Div_MallFunction">
+          <view class="mallFuncTitle">商城易系统商家后台功能</view>
+          <view class="mallFuncTxt">灵活的分销佣金设置</view>
+          <view class="mallFuncTxt">详尽的分销报表</view>
+          <view class="mallFuncTxt">企业商城与微信对接</view>
+          <view class="mallFuncTxt">具备微商城全部功能</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

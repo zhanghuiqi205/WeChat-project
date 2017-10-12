@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<import src="../../templates/banner/banner.wxml"/>
+<import src="../../templates/productConMenu/productConMenu.wxml"/>
+<import src="../../templates/imgText/imgText.wxml"/>
+<import src="../../templates/imgImg/imgImg.wxml"/>
+<import src="../../templates/logo_menu/logo_menu.wxml"/>
+<view class="headBox">
+    <template is="logo_menu" data="{{...logo_menu}}"></template>
+  	<template is="bannerTemp" data="{{...tempData}}"></template>
+</view>
+<template is="productConMenu" data="{{...productConMenu}}"></template>
+<view class="textBox">
+	<view class="tit">{{title}}</view>
+	<view class="txt">{{text}}</view>
+</view>
+<template is="imgText" data="{{...tempImgText}}"></template>
+<template is="imgImg" data="{{...tempImg}}"></template>
+<template is="imgText" data="{{...tempImgText1}}"></template>
+<view class="Morecases">
+	<view class="cases">{{moreCases}}</view>
+</view>
+<view class="caseWrap">
+	<block wx:for="{{casesArr}}" wx:key="*this">
+		<image class="caseItem" src="{{item}}"></image>
+	</block>
+</view>	

@@ -1,0 +1,171 @@
+@import "../../templates/banner/banner.wxss";
+@import "../../templates/logo_menu/logo_menu.wxss";
+
+.container{
+    height: 100%;
+    background:#edf0f5;
+
+}
+
+.headBox {
+	position: relative;
+	height: 480rpx;
+  width: 100%;
+}
+
+
+/*简介-全网营销*/
+.introduce{
+    font-size: 24rpx;
+}
+.introduce .titlebox{
+  height: 69rpx;
+  border-bottom:1px solid #c9ced6;
+
+}
+.introduce .imgleft image{
+  width: 69rpx;
+  height: 69rpx;
+  float: left;
+}
+
+.introduce .title{
+    padding-left:80rpx;
+    /* height:58rpx; */
+    color:#0e69c9;
+    line-height:69rpx;
+    font-weight:bold;
+    font-size: 30rpx;
+}
+.introduce .context{
+    padding:0rpx 22rpx;
+    background:#ffffff;
+}
+.introduce .context .text1{
+    font-size:36rpx;
+    color:#333333;
+    width:614rpx;
+    font-weight:bold;
+    line-height:56rpx;
+}
+.introduce .context .img image{
+    width:30rpx;
+    height:6rpx;
+}
+.introduce .context .text2{
+    color:#666666;
+    margin-top:28rpx;
+    margin-bottom:50rpx;
+    line-height:44rpx;
+}
+.introduce .context .text3{
+    font-size:36rpx;
+    color:#0e69c9;
+    background:url("../../images/intro/more_ico.png")no-repeat 144rpx center;
+    background-size:40rpx;
+    font-weight:bold;
+    margin-top: 20rpx;
+}
+.introduce .context .text4{
+    color:#ffffff;
+    background:#035CAC;
+    margin:40rpx 0;
+    padding:1rpx 36rpx 20rpx 36rpx;
+    line-height:44rpx;
+   
+}
+.introduce .context .text4 view{
+    margin: 50rpx 0;
+    text-indent:24rpx;
+}
+.introduce .context .text4 .textheader{
+    color: #fff;
+    font-size: 36rpx;
+    line-height: 36rpx;
+    margin: 20rpx 0 40rpx;
+    padding: 8rpx 0;
+    position: relative;
+    text-align: center;
+}
+.introduce .context .text4 .textheaderline{
+    background: #fff;
+    height: 4rpx;
+    width: 140rpx;
+    margin: -28rpx auto; 
+    /* padding: 8rpx 0; */
+    position: relative;
+    /* text-align: center; */
+}
+.introduce .context .text4 .textmore{
+    background: #E0A119;
+    line-height: 48rpx;
+    margin: 40rpx auto;
+    text-align: center;
+    width: 180rpx;
+}
+ .introduce .context .text5 view{
+    margin: 0 10rpx;
+    font-size: 24rpx;
+    line-height: 40rpx;
+} 
+.introduce .context .text5 .t1{
+    color: #035cac;
+    font-size: 26rpx;
+}
+
+/*提供的服务*/
+.services{
+    overflow:hidden;
+    background:#ffffff;
+}
+.services .title{
+    height:58rpx;
+    border-top:1px solid #c9ced6;
+    border-bottom:1px solid #c9ced6;
+    font-size:26rpx;
+    padding-left:28rpx;
+    line-height:58rpx;
+    color:#333333;
+}
+.services .cellPart{
+    padding:0 22rpx;
+    padding-bottom:70rpx;
+    overflow:hidden;
+
+}
+.services .productCon{
+    text-align:center;
+    margin-top:60rpx;
+    overflow:hidden;
+    width: 25%;
+    float: left;
+}
+.services .productCon image{
+    height: 108rpx;
+    width: 108rpx;
+}
+.services .productCon .productConTxt{
+    font-size: 24rpx;
+    text-align: center;
+}
+/*轮播图  */
+.subMenuList {
+    padding-left:28rpx;
+    position:absolute;
+    top:557rpx;
+    background:#fff;
+    border-bottom:1px solid #ccc;
+    border-left:1px solid #ccc;
+    height:0;
+    overflow:hidden;
+    left:547rpx;
+
+}
+.subMenuItem {
+	width: 100%;
+	height: 40rpx;
+	line-height: 40rpx;
+	padding: 10rpx;
+	color: #666;
+	font-size: 28rpx;
+}

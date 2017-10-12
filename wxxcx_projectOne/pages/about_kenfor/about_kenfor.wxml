@@ -1,0 +1,29 @@
+<!--about_kenfor.wxml-->
+<import src="../../templates/logo_menu/logo_menu.wxml"/>
+<import src="../../templates/productConMenu/productConMenu.wxml"/>
+<view class="container">
+<template is="logo_menu" data="{{...logo_menu}}"></template>
+    <swiper class="m_banner" indicator-dots="true" current="0" autoplay="{{bannerPlay}}" interval="{{bannerInner}}" duration="{{bannerDuration}}" indicator-color="#fff" >
+        <swiper-item wx:for="{{imgUrls}}" wx:key="*this">
+            <image src="{{item}}" />
+        </swiper-item>
+    </swiper>
+    <view class="introduce">
+        <template is="productConMenu" data="{{...productConMenu}}"></template>
+        <view class="context">
+            <view>广东今科道同科技股份有限公司成立于1998年，是国内发展早、规模大、服务网络广的企业信息化服务商，迄今已先后在省内外开设11家分公司。自成立以来，今科科技一直致力于为企业提供全方位的一站式信息化解决方案，是国内率先通过ISO9001质量体系认证的企业信息化技术服务商。</view>
+            <view>公司的“商务e平台”于2006年获得国家科技部中小创新基金项目，2007年获得十一五国家科技支撑计划重大项目2009年获得国资委CIO年会企业信息化最佳解决方案，并于2012年增加企业移动端信息服务，升级为“商务e云平台”，实现一套数据全网覆盖。</view>
+            <view>核心产品“商务e云平台”通过“网站、推广、管理、应用”四位一体的方式为企业提供一站式的信息化服务。“商务e云平台”的产品或服务具体包括：企业网站建设、移动网站建设、商城建设、企业邮箱、网站推广、即时通讯、云监控、云主机、企业APP、企业OA及域名注册等。上述产品或服务均集成在今科云平台，以SaaS模式向企业提供服务，其经营模式已非常成熟。</view>
+            <view>商务e云平台采用SaaS模式带来两大好处，一是实行云服务的弹性收费，可以大幅降低企业客户成本；二是用户只需一个账号即可登陆该平台直接使用公司的相关产品和服务，提升用户体验。一直以来我们坚持对“商务e云平台”不断升级使其变得更加完善强大，以满足中小企业信息化不断发展的需求。</view>
+        </view>
+    </view>
+    <view class="services">
+        <view class="title">我们提供的服务范围</view>
+        <view class="cellPart">
+            <view class="productCon" wx:for="{{productCon}}" data-url="{{item.url}}" bindtap="bindViewTap" >
+                <image src="{{item.imgSrc}}"></image>
+                <view class="productConTxt">{{item.imgText}}</view>
+            </view>
+        </view>
+    </view>
+</view>

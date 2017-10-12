@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<import src="../../templates/logo_menu/logo_menu.wxml"/><!--引入头部菜单模板-->
+<view class="container">
+<template is="logo_menu" data="{{...logo_menu}}"></template><!--引入头部菜单模板-->
+  <swiper class="m_banner" indicator-dots="true" current="0" autoplay="{{bannerPlay}}" interval="{{bannerInner}}" duration="{{bannerDuration}}" indicator-color="#fff" >
+      <swiper-item wx:for="{{imgUrls}}" wx:key="*this">
+        <image src="{{item}}" />
+      </swiper-item>
+  </swiper>
+  <view class="product">
+    <view class="productText" >产品服务</view>
+    <view class="CellPart">
+      <!-- 遍历index.js 的productCon -->
+      <view class="productCon" wx:for="{{productCon}}" data-url="{{item.url}}" bindtap="bindViewTap" >
+        <image src="{{item.imgSrc}}"></image>
+        <view class="productConTxt">{{item.imgText}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="about" bindtap="bindViewTap" data-url="../intro/intro">
+    <view class="aboutTitle">关于今科</view>
+    <view class="aboutText">
+      广东今科道同科技股份有限公司成立于1998年，是国内发展早、规模大、服务网络广的企业信息化服务商。今科主要为广大企业提供网站建设、网络信息推广、电子商务策划运营、信息化管理系统、云计算应用服务，迄今为止合作企业达50000多家，覆盖各行各业，全国拥有12家分公司，国内首批企业信息化服务商。
+    </view>
+  </view>
+  <view class="video">
+    <view class="videoTitle">视频中心</view>
+    <view class="videoContent">
+    <!-- https://.kenfor.com/video/www2.kenfor.com/1474853538767375.mp4 -->
+      <video src="{{videoSrc}}"   controls ></video>
+    </view>
+  </view>
+  <view class="whyUs">
+    <view class="whyUsTitle">为什么选择我们</view>
+    <view class="whyUsContainer">
+      <!-- 遍历index.js 的chooseUs -->
+      <view class="whyUsItem" wx:for="{{chooseUs}}" wx:key="*this">
+        <image src="{{item.imgUrl}}"></image>
+        <view class="whyUsText_1">{{item.text1}}</view>
+        <view class="whyUsText_2">{{item.text2}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="copyRight">
+    <view>版权所有(C)1998-2016 广东今科道同科技股份有限公司</view>
+    <view>粤ICP备05022874号 本站采用今科云平台技术开发</view>
+  </view>
+</view>

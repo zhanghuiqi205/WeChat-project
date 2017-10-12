@@ -1,0 +1,32 @@
+.imgBox {
+	margin:20rpx;
+}
+.imgBox > image {
+	width: 100%;
+	height: 300rpx;
+}
+.imgBox .title {
+	margin: 10rpx 0 20rpx 0;
+	color:#035cac;
+	font-size:40rpx;
+}
+.itemWrapp {
+	display: flex;
+	flex-flow: row wrap; 
+	justify-content:space-between;
+}
+.imgItemBox {
+	flex:auto;
+	justify-content: space-between;
+	width: 33.333%;
+	text-align: center;
+	margin-bottom: 20rpx;
+}
+.imgItemBox image {
+	width: 128rpx;
+	height: 128rpx;
+}
+.imgItemBox .tit {
+	color: #666;
+	font-size: 26rpx;
+}

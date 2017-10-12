@@ -1,0 +1,49 @@
+
+<import src="../../templates/banner/banner.wxml"/>
+<import src="../../templates/productConMenu/productConMenu.wxml"/>
+<import src="../../templates/logo_menu/logo_menu.wxml"/>
+
+<view class="headBox">
+    <template is="logo_menu" data="{{...logo_menu}}"></template>
+  	<template is="bannerTemp" data="{{...tempData}}"></template>
+  	<view class="menus" animation="{{animationData}}">
+		<view class="menuItem" wx:for="{{menus}}" wx:key="*this">{{item}}</view>
+  	</view>    
+</view>
+
+<template is="productConMenu" data="{{...productConMenu}}"></template>
+
+  <view class="center-text2">云邮箱优势，让你省心</view>
+
+  <view class="center-text2-1">邮件通信安全保障：采用邮件加密技术，保证邮件在传输过程中的安全可靠  </view>
+  <view class="center-text2-1">业务邮件跟踪：可以有效地追踪该邮局所属邮箱的邮件收发情况</view>
+  <view class="center-text2-1">精准垃圾邮件过滤：Sophos反垃圾过滤引擎平台，避免邮件误判，过滤准确率高达99%</view>
+
+  
+  <view class="text1">海量存储，全球畅邮</view>
+  <view class="title">
+  <image class="line" src="{{line}}"></image>
+  </view>
+
+  <image class="img-total" src="{{src4}}"></image>
+  <view class="text2">不错过每一封重要邮件</view>
+  <view class="text3">邮件分散存储在不同的存储服务器，采用哈希算法对邮件文件进行准确定位，助您快捷完成日常各项工作。</view>
+  
+  <image class="img-total" src="{{src5}}"></image>
+  <view class="text2">多链路接入，消除网络瓶颈</view>
+  <view class="text3">自建多线路IDC数据中心 拥有电信、联通、移动等多链路接入</view>
+  
+
+
+  <view class="text1">技术领先，安全放心</view>
+  <view class="title">
+  <image class="line" src="{{line}}"></image>
+  </view>
+  <image class="img-total" src="{{src6}}"></image>
+  <view class="text2">不错过每一封重要邮件</view>
+  <view class="text3">邮件分散存储在不同的存储服务器，采用哈希算法对邮件文件进行准确定位，助您快捷完成日常各项工作。</view>
+  
+  <image class="img-total" src="{{src7}}"></image>
+  <view class="text2">多链路接入，消除网络瓶颈</view>
+  <view class="text3 text3-bottom">自建多线路IDC数据中心 拥有电信、联通、移动等多链路接入</view>
+

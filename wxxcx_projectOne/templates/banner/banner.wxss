@@ -1,0 +1,11 @@
+.banner {
+	width: 100%;
+	position: absolute;
+	top: 80rpx;
+	z-index: 7;
+	height: 400rpx;
+}
+.slide-image {
+	width: 100%;
+	height: 100%;
+}

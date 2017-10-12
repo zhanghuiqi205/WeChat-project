@@ -1,0 +1,55 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/mobile_site/mobile_site",
+    "pages/logs/logs",
+    "pages/about_kenfor/about_kenfor",
+    "pages/CDN/CDN",
+    "pages/host_server/host_server",
+    "pages/promotion_one/promotion_one",
+    "pages/shopMall/shopMall",
+    "pages/cloudMon/cloudMon",
+    "pages/contact/contact",
+    "pages/intro/intro",
+    "pages/cloud/cloud",
+    "pages/market/market",
+    "pages/network_b/network_b",
+    "pages/cloud_email/cloud_email",
+    "pages/phone/phone",
+    "pages/map/map"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "今科科技",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "color": "#929292",
+    "selectedColor": "black",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tabbar/home.png",
+        "selectedIconPath": "images/tabbar/homeSel.png",
+        "text": "主页"
+      },{
+        "pagePath": "pages/phone/phone",
+        "iconPath": "images/tabbar/phone.png",
+        "selectedIconPath": "images/tabbar/phoneSel.png",
+        "text": "电话"
+      },{
+        "pagePath": "pages/map/map",
+        "iconPath": "images/tabbar/map.png",
+        "selectedIconPath": "images/tabbar/mapSel.png",
+        "text": "地图"
+      },{
+        "pagePath": "pages/contact/contact",
+        "iconPath": "images/tabbar/map.png",
+        "selectedIconPath": "images/tabbar/mapSel.png",
+        "text": "联系"
+      }]
+  }
+}

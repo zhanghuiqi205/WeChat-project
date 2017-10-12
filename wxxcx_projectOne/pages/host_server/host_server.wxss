@@ -1,0 +1,188 @@
+/*引入模板文件的样式，也可以直接在app.wxss全局引用*/
+@import "../../templates/banner/banner.wxss";
+@import '../../templates/productConMenu/productConMenu.wxss';
+@import "../../templates/logo_menu/logo_menu.wxss";
+.headBox {
+	position: relative;
+	height: 480rpx;
+}
+.webHead{
+	height: 80rpx;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	background: #fff;
+	z-index: 99;
+}
+.logo {
+	width: 280rpx;
+	height: 60rpx;
+	margin: 10rpx 0 0 10rpx; 
+	float: left;
+}
+.muneTab {
+	width:70rpx;
+	height: 70rpx;
+	float: right;
+	margin: 5rpx 20rpx; 
+}
+
+.menus {
+	width:100%;
+	height: 614rpx;
+	background: #035CAC;
+	overflow: hidden;
+	position: absolute;
+	top: -750rpx;
+	z-index: 10;
+}
+.menuItem {
+	height: 86rpx;
+	border-bottom: 2rpx solid #5484AF;
+	line-height: 86rpx;
+	text-indent: 20rpx;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bolder;
+}
+.menuItem:last-child {
+	border: 0;
+}
+.textBox {
+	margin:40rpx 20rpx 0 20rpx;
+}
+.m_banner{
+  height: 400rpx;
+}
+.m_banner image{
+  width: 100%;
+  height: 400rpx;
+}
+
+.server{
+  width: 100%;
+  height:57rpx;
+  border-bottom: 1px solid #edf0f5;
+}
+.server image{
+  width:57rpx;
+  height:57rpx;
+}
+.servertext{
+  padding-top: 17rpx;
+  font-size:24rpx;
+  color: #666666;
+  float: left;
+  padding-left: 17rpx;
+}
+.img1{
+  float: left;
+}
+.img2{
+  float: right;
+}
+.text{
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  font-size: 24rpx;
+  color: #666666;
+}
+.server-list{
+  height:380rpx;
+  width:650rpx;
+  display: block;
+  margin:0 auto;
+  margin-bottom: 70rpx;
+}
+.server_title{
+  height: 100px;
+  width: 33.3%;
+  float: left;
+}
+.server_title image{
+  height: 130rpx;
+  width: 130rpx;
+  margin-right: 100rpx;
+  margin-left: 40rpx;
+}
+.server_text{
+  font-size: 24rpx;
+  text-align: center;
+}
+.background{
+  background-color:#575757;
+  width: 655rpx;
+  height: 310rpx;
+  margin: 0 auto;
+  text-align: left;
+  padding-bottom: 60rpx;
+}
+.centertext{
+  font-size: 30rpx;
+  margin-bottom: 40rpx;
+  margin-top: 40rpx;
+  margin-left: 40rpx;
+  color: #fff;
+  padding-top: 40rpx;
+
+}
+.centertext1{
+  font-size: 24rpx;
+  margin-bottom: 13rpx;
+  color: #fff;
+  margin-left:30rpx;
+}
+
+ .server_title1 image{
+  height: 100rpx;
+  width: 100rpx;
+  margin-left: 20rpx;
+
+
+
+} 
+.total-text{
+margin-left: 30rpx;
+position: relative;
+top:-90rpx;
+left:100rpx;
+
+}
+
+.server_text1{
+  font-size: 24rpx;
+  color: blue;
+  margin-left:25rpx;
+  text-align: left;
+}
+.server_text2{
+  width:75%;
+  font-size: 24rpx;
+  text-align: left;
+  margin-left:25rpx;
+  color: #666666;
+
+}
+
+
+.single-title{
+  font-size: 30rpx;
+  color: blue;
+  margin-left: 25rpx;
+  margin-bottom: 25rpx;
+  margin-top: 40rpx;
+
+}
+.single-title1{
+  text-align: center;
+  color: blue;
+  font-size: 30rpx;
+  margin-bottom: 60rpx;
+  margin-top: 70rpx;
+}
+.space{
+  width:100%;
+  height: 90rpx;
+}

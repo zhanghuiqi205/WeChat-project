@@ -1,0 +1,50 @@
+<!--intro.wxml-->
+<import src="../../templates/banner/banner.wxml"/>
+<import src="../../templates/logo_menu/logo_menu.wxml"/><!--引入头部菜单模板-->
+
+<view class="container">
+    <view class="headBox">
+        <template is="logo_menu" data="{{...logo_menu}}"></template><!--引入头部菜单模板-->
+        <template is="bannerTemp" data="{{...tempData}}"></template>
+        <view class="menus" animation="{{animationData}}">
+        <view class="menuItem" wx:for="{{menus}}" wx:key="*this">{{item}}</view>
+        </view>    
+    </view>
+    <view class="introduce">
+        <view class="titlebox">
+            <view class="imgleft" bindtap="bindBackTap"><navigator url="../index/index" open-type="reLaunch"><image src="../../images/about_kenfor/back_btn.png" ></image></navigator></view>
+            <view class="title">全网营销</view>
+        </view>
+        <!-- <view class="imgright"><image src="{{imgRight}}"></image></view> -->
+        <view class="context">
+            <view class="text1">互联网进入全网时代，手机网名随时随地在线，商机随时存在</view>
+            <view class="img"><image src="../../images/intro/line.png"></image></view>
+            <view class="text2">随着互联网的发展，网络不断深入到人们生活中的每一个角落，网络成为了人们的生活必需品，企业为什么要进入全网营销？</view>
+            <view class="text3" bindtap="bindViewTap" data-url="../market/market">了解更多</view>
+            <view class="text4">
+                <view class="textheader">云桌面全网营销解决方案</view>
+                <view class="textheaderline"></view>
+                <view>由于网络的覆盖性和传播性，也使得营销界迎来了重大变革，网络营销已是大势所趋。</view>
+                <view>商务e云桌面集中移动互联网、PC互联网资源，将网站建设、运营推广、数据分析、微信朋友圈推广、产品分销等一系列电子商务内容，集成于一体的最佳营销模式。</view>
+                <view class="textmore" >了解更多>></view>
+            </view>
+            <view class="text5">
+                <view class="t1">我们的服务优势</view>
+                <view class="t2">18年网站服务积淀</view>
+                <view class="t3">成熟的互联网产品运用方法论，结合实战多年的项目开发经验专业的研发团队和运营团队，自主的IDC机房专业运营团队，使网站更稳定更安全。</view>
+               
+            </view>
+        </view>
+        
+    </view>
+   
+    <view class="services">
+        <view class="title">我们提供的服务范围</view>
+        <view class="cellPart">
+            <view class="productCon" wx:for="{{productCon}}" data-url="{{item.url}}" bindtap="bindViewTap" >
+                <image src="{{item.imgSrc}}"></image>
+                <view class="productConTxt">{{item.imgText}}</view>
+            </view>
+        </view>
+    </view>
+</view>

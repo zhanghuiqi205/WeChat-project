@@ -1,0 +1,76 @@
+
+@import "../../templates/logo_menu/logo_menu.wxss";
+@import '../../templates/productConMenu/productConMenu.wxss';
+.cloudCon{
+  height: 100%;
+  width: 100%;
+}
+.cloudBanner,.cloudBanner image{
+  width: 100%;
+}
+.cloudTitle{
+  width:100%;
+  margin-top:-9rpx;
+}
+.cloudContent{
+  width: 100%;
+}
+.forum{
+  background-color:#fff;
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  color: #666;  
+}
+.cloudContent .forum .introduction{
+  font-size:28rpx;
+  line-height:48rpx;
+  margin-top:20rpx;
+  padding:20rpx 30rpx;
+}
+.cloudCross,.cloudCross image{
+  width: 100%;
+}
+.cloudFunc{
+  margin-top: 20rpx;
+}
+.cloudFunc .funcImg image{
+  height:68rpx;
+  padding-left:56rpx;
+}
+.funcContent{
+  height: 200rpx;
+  padding:0 10px;
+}
+.func_left{
+  float: left;
+  width:178rpx;
+}
+.func_left image{
+  width:160rpx;
+  height:170rpx;
+}
+.func_right{
+  padding-top:32rpx;
+  padding-bottom:40rpx;
+}
+.funcFeatureTxt1{
+  color:#000;
+font-weight:bold;
+line-height:60rpx;
+}
+.funcFeatureTxt2{
+  font-size:28rpx;
+  line-height:36rpx;
+}
+.funcAdvantage{
+  padding:20px;
+}
+.funcAdvantage .advantageTitle{
+  color:#000;
+  font-weight:bold;
+  line-height:80rpx;
+}
+.funcAdvantage .advantageTxt{
+  font-size:28rpx;
+  line-height:56rpx
+}

@@ -1,0 +1,83 @@
+/**contact.wxss**/
+@import "../../templates/logo_menu/logo_menu.wxss";
+.container{
+  background-color: #edf0f5;
+  height: 100%;
+  width: 100%;
+}
+.conBanner{
+  width: 100%
+}
+.conBanner image{
+  width:100%;
+}
+.conTitle{
+  height:36px;
+  width:100%;
+  line-height:36px;
+  text-align:left;
+  color:#666;
+  padding-left:20px;
+}
+.bannerContent{
+  width: 100%;
+}
+.Forum{
+  background-color:#fff;
+border-top:1px solid #ccc;
+border-bottom:1px solid #ccc;
+padding:10px 15px;  
+
+}
+.forumText{
+  color:#035CAC;
+font-size:18px;
+line-height:26px;
+}
+.ShortLine{
+  height: 4px;
+  width: 16px;
+  background-color:#000; 
+  margin:7px 1px;
+}
+.forumTel,.forumWx{
+  font-size:14px;
+line-height:20px;
+color:#666;
+}
+.subForum{
+  margin-top:10px;
+  background-color:#fff;
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  padding:15px;
+
+}
+.subForum_left{
+  width:100px;
+  height:110px;
+  float: left;
+  margin-top:4px;
+}
+.subForum_left .forumImg{
+  width:82px;
+  height:62px;
+}
+.subForum_left .forumTelImg{
+  width:82px;
+  height:30px;
+}
+.subForum_right .subRightTitle{
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #F38918;
+}
+.subForum_right .subRightAdr{
+  font-size: 12px;
+  line-height: 20px;
+  color: #666;
+}
+.subForum:last-child{
+  margin-bottom: 10px;
+}

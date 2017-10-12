@@ -1,0 +1,14 @@
+/* pages/phone/phone.wxss */
+.kenforClientTel{
+    font-size:36rpx;
+    color:#fff;
+    line-height:50rpx;
+    background:#666;
+    border-bottom:1px solid lightgrey;
+    padding:10rpx 40rpx;
+    margin-top:10rpx;
+}
+.kenforClientTel text{
+    display:inline-block;
+    width:50%;
+}

@@ -1,0 +1,77 @@
+/*引入模板文件的样式，也可以直接在app.wxss全局引用*/
+@import "../../templates/banner/banner.wxss";
+@import '../../templates/productConMenu/productConMenu.wxss';
+@import "../../templates/logo_menu/logo_menu.wxss";
+
+.headBox {
+	position: relative;
+	height: 480rpx;
+  width: 100%;
+}
+
+.img-1{
+  width:675rpx;
+  height:480rpx;
+  display:block;
+  margin:30rpx auto;
+}
+.center-text{
+  text-align: center;
+  margin-top: 50rpx;
+  margin-bottom:70rpx;
+}
+.center-text2{
+padding-left: 35rpx;
+margin-top: 40rpx;
+margin-bottom: 40rpx;
+font-size: 30rpx;
+}
+.center-text2-1{
+  width:675rpx;
+  font-size: 24rpx;
+  padding-left: 48rpx;
+  margin-bottom: 50rpx;
+}
+
+.server_title{
+  height: 100px;
+  width: 33.3%;
+  float: left;
+}
+.server_title image{
+  height: 130rpx;
+  width: 130rpx;
+  margin-right: 100rpx;
+  margin-left: 40rpx;
+}
+.server_text{
+  font-size: 24rpx;
+  text-align: center;
+}
+
+.total-text{
+margin-left: 30rpx;
+position: relative;
+top:-100rpx;
+left:100rpx;
+color: #035cac;
+}
+
+.server_text1{
+  font-size: 24rpx;
+  margin-left:25rpx;
+  text-align: left;
+  color: #035cac;
+}
+.server_text2{
+  width:550rpx;
+  font-size: 24rpx;
+  text-align: left;
+  margin-left:25rpx;
+  color: #666666;
+}
+.server_title1 wx-image {
+height:100rpx;
+width:100rpx;
+margin-left:20rpx;
+}

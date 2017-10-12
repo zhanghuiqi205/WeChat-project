@@ -1,0 +1,43 @@
+.productTitle{
+    height:58rpx;
+    background:#edf0f5;
+    border-bottom:1px solid #c9ced6;
+    position: relative;
+}
+.productTitle view{
+    float:left;
+}
+.productTitle image{
+    height:58rpx;
+    width:60rpx;
+}
+.productTitle .txt{
+    padding-left:16rpx;
+}
+.productTitle view text{
+    line-height:58rpx;
+    font-size:25rpx;
+}
+.productTitle .more_btn{
+    float:right;
+}
+.productTitle .subMenuList {
+    padding-left:60rpx; 
+	position: absolute;
+    top: 60rpx;
+	background:#fff;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.productTitle .subMenuItem {
+	width: 100%;
+	height: 40rpx;
+	line-height: 40rpx;
+	padding: 10rpx;
+	color: #666;
+	font-size: 28rpx;
+    display: block;
+}

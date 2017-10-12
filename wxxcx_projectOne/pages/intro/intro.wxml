@@ -1,0 +1,62 @@
+<!--intro.wxml-->
+<import src="../../templates/logo_menu/logo_menu.wxml"/>
+<view class="container">
+    <template is="logo_menu" data="{{...logo_menu}}"></template>
+    <swiper class="m_banner" indicator-dots="true" current="0" autoplay="{{bannerPlay}}" interval="{{bannerInner}}" duration="{{bannerDuration}}" indicator-color="#fff" >
+        <swiper-item wx:for="{{imgUrls}}" wx:key="*this">
+            <image src="{{item}}" />
+        </swiper-item>
+    </swiper>
+    <view class="introduce">
+        <view class="title">
+            关于今科
+        </view>
+        <view class="context">
+            <view class="text1">致力为企业打造一站式信息化基础服务平台，帮助企业开展网络营销。</view>
+            <view class="img"><image src="../../images/intro/line.png"></image></view>
+            <view class="text2">提供云计算模式下的SaaS、PaaS以及IaaS服务 ，目前已为50000多家企业提供信息化服务</view>
+            <view class="text3" bindtap="bindViewTap" data-url="../about_kenfor/about_kenfor">了解更多</view>
+            <view class="text4">
+                <view>广东今科道同科技股份有限公司成立于1998年，是国内发展早、规模大、服务网络广的企业信息化服务商。</view>
+                <view>今科主要为广大企业提供网站制作、信息推广、电子商务策划运营、信息化管理系统、云计算应用服务，迄今为止合作企业达50000多家，覆盖各行各业，全国拥有11家分公司，国内首批企业信息化服务商。</view>
+            </view>
+        </view>
+    </view>
+    <view class="course">
+        <view class="text1">发展历程</view>
+        <view class="text2">DEVELOPMENT COURSE</view>
+        <view class="text3">
+            <swiper class="my_swiper1" current="{{currentYear}}"  bindchange="swiperChange">
+                <swiper-item wx:for="{{course}}">
+                    <view class="year">{{item.date}}</view>
+                    <view class="detail">{{item.detail}}</view>
+                </swiper-item>
+            </swiper>
+        </view>
+        <view class="text4">
+            <view class="year_rule">
+                <swiper class="my_swiper2" current="{{currentYear}}" bindchange="swiperChange">
+                    <swiper-item wx:for="{{course}}">
+                        <view class="now">
+                            <image src="../../images/intro/hand.png"></image>
+                            <view>{{item.year}}</view>
+                        </view>
+                        <view class="next" bindtap="nextYearTap">
+                            <image src="../../images/intro/hand.png"></image>
+                            <view>{{item.nextYear}}</view>
+                        </view>
+                    </swiper-item>
+                </swiper>
+            </view>
+        </view>
+    </view>
+    <view class="services">
+        <view class="title">我们提供的服务范围</view>
+        <view class="cellPart">
+            <view class="productCon" wx:for="{{productCon}}" data-url="{{item.url}}" bindtap="bindViewTap" >
+                <image src="{{item.imgSrc}}"></image>
+                <view class="productConTxt">{{item.imgText}}</view>
+            </view>
+        </view>
+    </view>
+</view>

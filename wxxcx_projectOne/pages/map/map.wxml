@@ -1,0 +1,1 @@
+<map id="map" longitude="113.9419502020" latitude="22.5535685822" scale="28" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap"  bindregionchange="regionchange" show-location ></map>

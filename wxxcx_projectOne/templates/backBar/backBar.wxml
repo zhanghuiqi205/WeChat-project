@@ -1,0 +1,22 @@
+<template name="backBar">
+	<view class="container">
+		<view class="barBox">
+			<view class="backIcon" bindtap="backToIndex">
+				<image src="{{backIcon}}"></image>
+			</view>
+
+			<view class="titleType">{{titleType}}
+				<!-- CDN节点加速服务 -->
+			</view>
+
+			<view class="subMenu">
+				<image src="{{subMenu}}" bindtap="showSubMenu"></image>
+			</view>
+		</view>
+		<view class="subMenuList" animation="{{animationSubData}}">
+			<block wx:for="{{subMenuList}}" wx:key="*this">
+				<view class="subMenuItem">{{item}}</view>
+			</block>
+		</view>
+	</view>
+</template>

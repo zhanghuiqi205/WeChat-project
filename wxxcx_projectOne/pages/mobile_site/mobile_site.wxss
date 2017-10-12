@@ -1,0 +1,184 @@
+/*引入模板文件的样式，也可以直接在app.wxss全局引用*/
+@import "../../templates/banner/banner.wxss"; 
+@import "../../templates/logo_menu/logo_menu.wxss";
+@import '../../templates/productConMenu/productConMenu.wxss';
+.container{
+  background: #edf0f5;
+  width: 100%;
+}
+ .headBox {
+	position: relative;
+	height: 480rpx;
+  width: 100%;
+} 
+
+.mobileSiteTitle{
+  padding-bottom:2rpx 0;
+  
+}
+
+.mobileSite_container{
+  height: 1300rpx;
+  width:100%;
+  background: #fff;
+  border-bottom: 2rpx solid #ccc;
+}
+.mobileSite_show{
+  height:278rpx;
+  width: 100%;
+}
+.ms_showTitle{
+  height: 94rpx;
+  width: 100%;
+  line-height:94rpx;
+  font-size:32rpx;
+  padding-left:20rpx;
+  margin-top:1px;
+  text-align: center;
+  color:#333;
+}
+.ms_showTitle_line{
+  height:4rpx;
+  width:120rpx;
+  margin:0 auto;
+  background: #ccc;
+  margin-top: -6rpx;
+}
+.ms_showImg{
+  height: 180rpx;
+  width: 26%;
+  text-align:center;
+  margin-top:20rpx;
+  margin-left:46rpx;
+  float: left;
+}
+.ms_showImg image{
+  width:64rpx;
+  height:60rpx;
+  margin-left:10rpx;
+}
+.ms_showText{
+  font-size:24rpx;
+  line-height:40rpx;
+  text-align:center;
+  color:#666;
+  padding: 10rpx 0 20rpx;
+}
+
+
+.mobileSite_whyMake{
+  height: 280rpx;
+  margin: 40rpx 0 0;
+}
+.ms_whyMakeTitle{
+  height:90rpx;
+  line-height: 90rpx;
+  font-size: 32rpx;
+  margin: 0 40rpx;
+  clear: both;
+  padding-top: 16rpx;
+}
+
+.ms_whyMakeContent{
+  height: 54rpx;
+
+}
+.ms_whyMakeText1 {
+  height: 66rpx;
+  width: 66rpx;
+  line-height: 66rpx;
+  background: #78909c;
+  margin: 20rpx;
+  margin-left:16rpx;
+  color: #fff;
+  text-align: center;
+  border-radius: 8rpx;
+  font-size: 52rpx;
+  font-weight: blod;
+}
+.ms_whyMakeText2 {
+  line-height:30rpx;
+  margin-left:98rpx;
+  margin-top:-82rpx;
+  font-size:24rpx;
+  color:#666;
+  margin-right:8rpx;
+
+
+ 
+}
+.mobileSite_worth{
+  height:500rpx;
+  margin-top: 86rpx;
+}
+.mobileSite_worth image{
+  height:308rpx;
+  width:96%;
+  margin-left: 16rpx;
+}
+
+
+.worthTitle{
+  font-size: 26rpx;
+  color: #555;
+  padding-left:20rpx;
+  margin-top: 20rpx;
+  line-height: 40rpx;
+}
+.worthTitle view {
+  margin-top: 6rpx;
+}
+
+.advantage{
+  height: 1220rpx;
+  margin-top:40rpx; 
+  border-top: 2rpx solid #ccc;
+  background: #fff;
+  width: 100%;
+}
+
+.advantageTitle{
+  font-size: 30rpx;
+  color: #333;
+  padding-left:20rpx;
+  margin-top: 46rpx;
+}
+.avContent{
+  height: 114rpx;
+  margin-top:10rpx;
+  padding-top:20rpx;
+  padding-left:20rpx;
+  /* border: 1rpx solid red; */
+}
+.avContent image{
+  width: 114rpx;
+  height: 114rpx;
+  border-radius: 50%; 
+}
+.advantageImg{
+  height: 660rpx;
+  width:100%;
+  
+}
+.avText_1{
+  padding-left: 140rpx;
+  margin-top:-92rpx;
+  color: #89b0df;
+  font-size: 24rpx;
+}
+.avText_2{
+  padding-left: 140rpx;
+  margin-top:8rpx;
+  color: #666; 
+  font-size: 24rpx;
+}
+.advantageImg{
+  width:606rpx;
+  height:556rpx;
+  padding-top:70rpx;
+  padding-left:48rpx;
+}
+.advantageImg image{
+  width:606rpx;
+  height:556rpx;
+}

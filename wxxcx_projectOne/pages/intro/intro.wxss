@@ -1,0 +1,152 @@
+@import '../../templates/logo_menu/logo_menu.wxss';
+
+.container{
+    background-color: #edf0f5;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.m_banner{
+    height: 400rpx; 
+}
+.m_banner image{
+    width: 100%;
+    height: 400rpx;
+}
+/*简介-关于今科*/
+.introduce{
+    font-size:24rpx;
+}
+.introduce .title{
+    padding-left:22rpx;
+    height:58rpx;
+    color:#0e69c9;
+    border-bottom:1px solid #c9ced6;
+    line-height:58rpx;
+    font-weight:bold;
+}
+.introduce .context{
+    padding:38rpx 22rpx;
+    background:#ffffff;
+}
+.introduce .context .text1{
+    font-size:36rpx;
+    color:#333333;
+    width:614rpx;
+    font-weight:bold;
+    line-height:56rpx;
+}
+.introduce .context .img image{
+    width:30rpx;
+    height:6rpx;
+}
+.introduce .context .text2{
+    color:#666666;
+    margin-top:28rpx;
+    margin-bottom:50rpx;
+    line-height:44rpx;
+}
+.introduce .context .text3{
+    font-size:36rpx;
+    color:#0e69c9;
+    background:url("../../images/intro/more_ico.png")no-repeat 144rpx center;
+    background-size:40rpx;
+    font-weight:bold;
+}
+.introduce .context .text4{
+    color:#ffffff;
+    background:#505050;
+    margin:22rpx 0;
+    padding:1rpx 36rpx 20rpx 36rpx;
+    line-height:44rpx;
+}
+.introduce .context .text4 view{
+    margin: 50rpx 0;
+    text-indent:24rpx;
+}
+/*发展历程*/
+.course{
+    background:#035cac;
+    color:#ffffff;
+    font-size:36rpx;
+    text-align:center;
+    padding:36rpx 0;
+}
+.course>view{
+    margin-top:24rpx;
+}
+.course .detail{
+    margin-top:24rpx;
+}
+.course .year_rule{
+    background:url('../../images/intro/rule.png')no-repeat center 10rpx;
+    background-size:90% auto;
+    overflow: hidden
+}
+.my_swiper1{
+    height: 220rpx;
+}
+.my_swiper2{
+    height: 150rpx;
+}
+.my_swiper2 swiper-item{
+    min-height: 220rpx;
+    width: 50%;
+}
+.course .year_rule swiper-item>view{
+    text-align:center;
+    float: left;
+    width: 50%;
+}
+.course  image{
+    width:43rpx;
+    height:61rpx;
+}
+.course .now{
+   font-weight: bold;
+   font-size: 48rpx;
+}
+.course .next{
+    color: #5f93c1;
+    line-height: 48rpx;
+}
+.course .next>image,.course .next>view{
+    margin-left: -50%;
+}
+.course .next image{
+    visibility: hidden;
+}
+/*提供的服务*/
+.services{
+    overflow:hidden;
+    background:#ffffff;
+}
+.services .title{
+    height:58rpx;
+    border-bottom:1px solid #c9ced6;
+    font-size:25rpx;
+    padding-left:28rpx;
+    line-height:58rpx;
+    color:#333333;
+}
+.services .cellPart{
+    padding:0 22rpx;
+    padding-bottom:70rpx;
+    overflow:hidden;
+
+}
+.services .productCon{
+    text-align:center;
+    margin-top:70rpx;
+    overflow:hidden;
+    width: 25%;
+    float: left;
+}
+.services .productCon image{
+    height: 108rpx;
+    width: 108rpx;
+}
+.services .productCon .productConTxt{
+    font-size: 24rpx;
+    text-align: center;
+}

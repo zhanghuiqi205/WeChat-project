@@ -1,0 +1,58 @@
+<!--mobile_site.wxml-->
+
+<import src="../../templates/banner/banner.wxml"/>
+<import src="../../templates/logo_menu/logo_menu.wxml"/><!--引入头部菜单模板-->  
+<import src="../../templates/productConMenu/productConMenu.wxml"/>
+<view class="container">    
+    <view class="headBox">
+        <template is="logo_menu" data="{{...logo_menu}}"></template><!--引入头部菜单模板-->
+        <template is="bannerTemp" data="{{...tempData}}"></template>
+        <view class="menus" animation="{{animationData}}">
+        <view class="menuItem" wx:for="{{menus}}" wx:key="*this">{{item}}</view>
+        </view>    
+    </view>
+    
+    <view class="mobileSite">
+        <view class="mobileSiteTitle">
+            <template is="productConMenu" data="{{...productConMenu}}"></template>
+        </view> 
+       
+        <view class="mobileSite_container">
+            <view class="mobileSite_show">
+                <view class="ms_showTitle">手机网站时代强势来袭</view>
+                <view class="ms_showTitle_line"></view>
+                <view class="ms_showImg" wx:for="{{siteCon}}">
+                  <image src="{{item.imgSrc}}"></image>
+                  <view class="ms_showText">{{item.imgText}}</view>  
+                </view>
+            </view>
+            <view class="mobileSite_whyMake">
+              <view class="ms_whyMakeTitle">有了pc网站，为什么还要做手机网站？</view>
+              <view class="ms_whyMakeContent"  wx:for="{{whyMakeContent}}" wx:key="*this">
+                <view class="ms_whyMakeText1">{{item.wmNum}}</view>
+                <view class="ms_whyMakeText2">{{item.wmText}}</view>
+              </view>
+            </view>
+            <view class="mobileSite_worth">
+              <image src="{{mobileSite_worth}}"></image>
+                <view class="worthTitle" wx:for="{{worthTitle}}" wx:key="*this">
+                    <view>{{item}} </view>
+                </view>
+            </view>
+        </view>
+
+    </view>
+    
+    <view class="advantage">
+        <view class="advantageTitle">微平台/手机网站核心优势</view>
+        <view class="avContent" wx:for="{{avContent}}" wx:key="*this">
+             <image src="{{item.avimgUrl}}"></image>
+             <view class="avText_1">{{item.avText_1}}</view>
+             <view class="avText_2">{{item.avText_2}}</view>
+        </view>
+        <view class="advantageImg">
+            <image src="{{advantageImg}}"/>
+        </view>
+    </view>
+
+ </view> 
