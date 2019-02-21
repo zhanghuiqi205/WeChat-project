@@ -29,7 +29,7 @@ class Common extends Controller{
     //    var_dump($action_name, $controller_name);
        $bak = urlencode("http://www.xiaoziheng.club/home/".$controller_name."/".$action_name);
        
-       $redirecr_uri =urlencode('http://www.xiaoziheng.club/home/demo/getcode?bak='.$bak);
+       $redirecr_uri =urlencode('http://www.xiaoziheng.club/home/common/getcode?bak='.$bak);
        $url ="https://open.weixin.qq.com/connect/oauth2/authorize?appid=".$this->appid."&redirect_uri=".$redirecr_uri."&response_type=code&scope=snsapi_userinfo&state=".time()."#wechat_redirect";
        header('Location:'.$url);
     }
